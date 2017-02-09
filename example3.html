@@ -1,0 +1,107 @@
+<html>
+<head>
+  <title>Justify and align grid items Examples</title>
+</head>
+
+<style type="text/css">
+
+body{
+  position: relative;
+}
+
+.wrapper,
+.placeholder-wrapper{
+  display: grid;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 3px solid black;
+  grid-template-columns: calc(33.333% - 2px) calc(33.333% - 2px) calc(33.3333% - 2px);
+  grid-template-rows: calc(20% - 2px) calc(60% - 2px) calc(20% - 2px);
+  grid-gap: 3px;
+  /*grid-row-gap grid-col-gap*/
+}
+
+.placeholder-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #444;
+}
+
+.placeholder-wrapper-box{
+  background-color: #efefef;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+.wrapper {
+  position: relative;
+}
+
+.box {
+  background-color: #ed1233;
+  color: #fff;
+
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+ /*For horizontal Alignment or grid items*/
+
+ /*align-items: start | end | center | stretch;*/
+.justify-items{
+  justify-items: start;
+}
+
+/*justify-items: start | end | center | stretch;*/
+.justify-content{
+  justify-content: start;
+}
+
+
+/* for vertical alignment of grid items*/
+.align-items{
+  align-items: start;
+
+}
+
+.align-content{
+  align-content: start;
+}
+
+
+
+</style>
+<body>
+<div class="placeholder-wrapper">
+  <div class="placeholder-wrapper-box a"></div>
+  <div class="placeholder-wrapper-box b"></div>
+  <div class="placeholder-wrapper-box c"></div>
+  <div class="placeholder-wrapper-box d"></div>
+  <div class="placeholder-wrapper-box e"></div>
+  <div class="placeholder-wrapper-box f"></div>
+  <div class="placeholder-wrapper-box d"></div>
+  <div class="placeholder-wrapper-box e"></div>
+  <div class="placeholder-wrapper-box f"></div>
+</div>
+
+
+<div class="wrapper justify-items align-items">
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+  <div class="box"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<head>
+  <title>Justify and align grids Examples</title>
+</head>
+
+<style type="text/css">
+
+body{
+  position: relative;
+}
+
+.placeholder-wrapper{
+  display: grid;
+  width: calc(100% - 6px);
+  height: calc(100% - 6px);
+  border: 3px solid black;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px;
+
+  grid-gap: 3px;
+}
+
+.placeholder-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #333;
+  color: #444;
+}
+
+.placeholder-wrapper-box{
+  background-color: #efefef;
+  color: #fff;
+  padding: 20px;
+  font-size: 150%;
+}
+
+
+ /*For horizontal Alignment or grids column itself*/
+/*justify-content: start | end | center | stretch | space-around | space-between | space-evenly;*/
+.justify-content{
+  justify-content: start;
+}
+
+
+/*For vertical Alignment or grids column itself*/
+/*align-content: start | end | center | stretch | space-around | space-between | space-evenly;*/
+
+.align-content{
+  align-content: start;
+}
+
+
+
+</style>
+<body>
+<div class="placeholder-wrapper align-content justify-content">
+  <div class="placeholder-wrapper-box a"></div>
+  <div class="placeholder-wrapper-box b"></div>
+  <div class="placeholder-wrapper-box c"></div>
+  <div class="placeholder-wrapper-box d"></div>
+  <div class="placeholder-wrapper-box e"></div>
+  <div class="placeholder-wrapper-box f"></div>
+  <div class="placeholder-wrapper-box d"></div>
+  <div class="placeholder-wrapper-box e"></div>
+  <div class="placeholder-wrapper-box f"></div>
+</div>
+
+
+
+</body>
+</html>

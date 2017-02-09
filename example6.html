@@ -1,0 +1,57 @@
+<html>
+<head>
+  <title> Grid item flow direction</title>
+</head>
+
+<style type="text/css">
+
+.wrapper {
+  display: grid;
+  width: auto;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px 100px;
+  grid-gap: 10px;
+  color: #444;
+  border-radius: 5px;
+}
+
+/*/*/
+.flow {
+  grid-auto-flow: row;
+}
+.box {
+  background-color: red;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.box-1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 5;
+}
+.box-4{
+  grid-column: 4 / 5;
+  grid-row: 1 / 5;
+}
+</style>
+<body>
+  <div class="wrapper flow">
+    <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div>
+    <div class="box box-4">4</div>
+    <div class="box box-5">5</div>
+    <div class="box box-6">6</div>
+    <div class="box box-7">7</div>
+    <div class="box box-8">8</div>
+    <div class="box box-9">9</div>
+    <div class="box box-10">10</div>
+    <div class="box box-11">11</div>
+    <div class="box box-12">12</div>
+    <div class="box box-13">13</div>
+    <div class="box box-14">14</div>
+  </div>
+</body>
+</html>

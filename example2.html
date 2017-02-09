@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title> Grid Area Example </title>
+  </head>
+  <style>
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: [header-top] "header header header header" [header-bottom]
+             [main-top] "main main . sidebar" [main-bottom]
+             [footer-top] "footer footer footer footer" [footer-bottom]
+                        / 25% 25% 25% 25%;
+    /* grid-template-areas grid-template-rows / grid-template-column values */
+    grid-template-columns: 25% 25% 25% 25% ;
+    background-color: #fff;
+    color: #444;
+    grid-template-rows: auto;
+    grid-template-areas: "header header header header"
+                         "main main . sidebar"
+                         "footer footer footer footer";
+  }
+
+  .box {
+    background-color: #444;
+    color: #fff;
+    padding: 20px;
+    font-size: 150%;
+  }
+  .a{
+    grid-area: header;
+    background-color: blue;
+    text-align: center;
+  }
+  .b{
+    grid-area: main;
+    background-color: pink;
+    text-align: center;
+  }
+  .c{
+    grid-area: sidebar;
+    background-color: red;
+    text-align: center;
+  }
+  .d{
+    grid-area: footer;
+    background-color: green;
+    text-align: center;
+  }
+
+  </style>
+  <body>
+    <div class="wrapper">
+    <div class="box a">Header</div>
+    <div class="box b">Main Section</div>
+    <div class="box c">Sidebar</div>
+    <div class="box d">Footer</div>
+    </div>
+  </body>
+</html>
